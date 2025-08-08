@@ -10,7 +10,7 @@ df = pd.read_csv("Sample_Data.csv")
 
 # Create a function to style each chart
 def create_voltage_chart(data, title, color):
-    fig = px.line(data, x="Time", y="Voltage", title=title, line_shape="linear")
+    fig = px.line(data, x="Timestamp", y="Values", title=title, line_shape="linear")
     fig.update_layout(
         xaxis_title="Time (s)",
         yaxis_title="Voltage (V)"
